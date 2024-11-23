@@ -1,0 +1,184 @@
+cdnjs.cloudflare.com
+Yess
+Yess Str
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 50px;
+    background-color: #ff7f2f;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.contact {
+    display: flex;
+    gap: 10px;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+.social a {
+    position: relative;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .contact {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .social {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .social a {
+        font-size: 18px;
+    }
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.se-nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 0 20px;
+    position: fixed;
+    margin: auto;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+}
+
+.links ul a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.links ul a:hover {
+    transition: 0.3s;
+    color: #ff7f2f;
+}
+
+/* Hamburger icon visibility */
+.hamburger {
+    display: none;
+}
+
+.hamburger input {
+    display: none; /* Hide checkbox */
+}
+
+.hamburger label {
+    display: none; /* Hide label by default */
+    cursor: pointer;
+}
+
+/* Mobile responsive layout */
+@media (max-width: 768px) {
+    .se-nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .links {
+        width: 100%;
+
+        margin-top: 15px;
+        display: none; /* Hide links by default on mobile */
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links ul a {
+        font-size: 18px;
+    }
+
+    .hamburger {
+        display: block; 
+    }
+
+    .hamburger label {
+        display: block; 
+    }
+
+
+
+}
+
+body {
+    position: relative;
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 102vh; /* Ensure the body takes full viewport height */
+    background-color:white; /* Fallback for browsers that don't support rgba */
+}
+
+/* Add a transparent black overlay */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); /* Transparent black overlay with 50% opacity */
+    z-index: -1; /* Ensure overlay is behind the content */
+}
+.title {
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    margin-top: 300px;
+
+}
