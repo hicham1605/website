@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Inconsolata:wght@200..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ruda:wght@400..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 * {
     margin: 0;
     box-sizing: border-box;
@@ -71,6 +72,7 @@
     align-items: center;
     background-color: #f5f5f5;
     padding: 0 20px;
+    
     margin: auto;
 }
 
@@ -160,27 +162,76 @@ body {
     background-color:white; /* Fallback for browsers that don't support rgba */
 }
 
-/* Add a transparent black overlay */
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.8); /* Transparent black overlay with 50% opacity */
-    z-index: -1; /* Ensure overlay is behind the content */
-}
-.title {
+.adhe {
+
+    background-image: url(digisecmember.jpg);
+    background-repeat: repeat-x;
+    background-size:cover;
+    filter: brightness(60%);
     text-align: center;
+    margin-top: auto;
+    padding: 40px;
+    animation: scrollBackground 10s linear infinite;
+}
+@keyframes scrollBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -200% 0;
+    }
+}
+.adh1{
     font-size: 70px;
-    color: white;
-    margin-top: 150px;
-
+    color: #000000;
+}
+.adh2{
+    font-size: 20px;
+    color: #000000;
 }
 
 
-/*dropdown*/
+/* hhhhhhhhhh */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+header {
+    margin-top: 1%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.event {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #007BFF;
+}
+.event img{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 200px;
+}
+
+
+/* dropdown  */
+
+
 
 
 .links li a {

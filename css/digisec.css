@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Inconsolata:wght@200..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ruda:wght@400..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 * {
     margin: 0;
     box-sizing: border-box;
@@ -71,6 +72,7 @@
     align-items: center;
     background-color: #f5f5f5;
     padding: 0 20px;
+    
     margin: auto;
 }
 
@@ -160,23 +162,57 @@ body {
     background-color:white; /* Fallback for browsers that don't support rgba */
 }
 
-/* Add a transparent black overlay */
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.8); /* Transparent black overlay with 50% opacity */
-    z-index: -1; /* Ensure overlay is behind the content */
-}
-.title {
-    text-align: center;
-    font-size: 70px;
-    color: white;
-    margin-top: 150px;
+.adhe {
 
+    background-image: url(digisecmember.jpg);
+    background-repeat: repeat-x;
+    background-size:cover;
+    filter: brightness(60%);
+    text-align: center;
+    margin-top: auto;
+    padding: 40px;
+    animation: scrollBackground 10s linear infinite;
+}
+@keyframes scrollBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -200% 0;
+    }
+}
+.adh1{
+    font-size: 70px;
+    color: #000000;
+}
+.adh2{
+    font-size: 20px;
+    color: #000000;
+}
+
+#countainer{
+    padding: 10px;
+    background-color: #beadad31;
+    font-family: "Zilla Slab", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.objectif{
+    font-size: 25px;
+    text-align: center;
+}
+.text-obj{
+    font-size: 20px;
+}
+
+.mission{
+    font-size: 25px;
+}
+
+.text-miss{
+    text-align: center;
+    font-size: 20px;
 }
 
 
@@ -221,4 +257,126 @@ body::before {
 
 .dropdown:hover .dropbtn {
     background-color: #ff7f2f;
+}
+
+/* Members style*/
+
+
+.members{
+    background-color: #a19292;
+    text-align: center;
+}
+.nav-mem {
+    border-radius: 10%;
+    background-color: #beadad31;
+}
+
+/* Style for the team section */
+.team {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    margin: 20px auto;
+}
+
+/* Header style */
+.team h3 {
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Style for the unordered list */
+.team ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for each list item */
+.team li {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Style for the names (bold) */
+.team li strong {
+    color: #2d87f0;
+}
+
+/* Adding a hover effect for list items */
+.team li:hover {
+    background-color: #e9f7fe;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+.imgs1 {
+    position: relative;
+    top: 10px;
+    left: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+}
+.imgs2 {
+    position: relative;
+    top: 150px;
+    left: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+}
+
+.imgs3 {
+    position: relative;
+    top: 100px;
+    left: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+}
+#img {
+    background-color: #f7965aee;
+    height: 930px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f7c698;
+    color: #080808;
+    text-align: center; 
+    padding: 20px; 
+    position: relative; 
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+    font-size: 1em; 
+    font-family: 'Arial', sans-serif;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
