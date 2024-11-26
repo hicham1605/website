@@ -220,11 +220,9 @@ h1 {
 h2 {
     color: #007BFF;
 }
-.event img{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;
+.event img {
+    margin-left: 70%;
+    width: 300x;
     height: 200px;
 }
 
@@ -272,4 +270,26 @@ h2 {
 
 .dropdown:hover .dropbtn {
     background-color: #ff7f2f;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center; 
+    padding: 20px; 
+    position: relative; 
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+    font-size: 1em; 
+    font-family: 'Arial', sans-serif;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
